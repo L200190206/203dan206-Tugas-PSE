@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="icon" type="image/x-icon" href="./img/Ikon.png">
+		<title>Depreciation Calculator</title>
+	</head>
+	<div class="body-container">
+		<div class="flex-side gradient-container">
+			<div class="left-side-items">
+				<img class="img-logo" src="img/Logoo.png" alt="Logo" />
+				<h1 class="left-topic">Depreciation calculator</h1>
+			</div>
+		</div>
+		<form id="form" class="flex-side">
+			<div class="drop-down-input">
+				<label class="label" for="methods">Depreciation Method : </label>
+				<select class="input" name="methods" id="methods" placeholder="Select">
+					<option value="Straight Line">Straight Line</option>
+					<option value="Reducing Balance">Reducing Balance</option>
+					<option value="Production Unit">Production Unit</option>
+				</select>
+			</div>
+			<div class="form">
+				<label class="label" for="cost" id="cost-label">Cost : </label>
+				<input class="input" type="number" id="cost-input" name="cost" value="" placeholder="0" />
+				<br />
+				<label class="label" for="usefulLife" id="useful-life-label">Useful Life : </label>
+				<input class="input" type="number" id="useful-life-input" name="usefulLife" value="" placeholder="0" />
+				<br />
+				<label class="label" for="scrapValue" id="scrap-value-label">Scrap Value : </label>
+				<input class="input" type="number" id="scrap-value-input" name="scrapValue" value="" placeholder="0" />
+				<br />
+				<label class="label" for="accDepreciation" id="acc-depreciation-label">Acc. Depreciation : </label>
+				<input class="input" type="number" id="acc-depreciation-input" name="accDepreciation" value="" placeholder="0" />
+				<br />
+				<label class="label" for="scrap" id="scrap-label">Scrap : </label>
+				<input class="input" type="number" id="scrap-input" name="scrap" value="" placeholder="0" />
+				<br />
+				<label class="label" for="noOfUnits" id="no-of-units-label">Number Of Units : </label>
+				<input class="input" type="number" id="no-of-units-input" name="noOfUnits" value="" placeholder="0" />
+				<br />
+				<label class="label" for="productionPerYear" id="production-per-year-label">Production Per Year : </label>
+				<input class="input" type="number" id="production-per-year-input" name="productionPerYear" value="" placeholder="0" />
+				<br /><br>
+			</div>
+			<div class="depreciation-input-container">
+				<label class="label depreciation-label" for="depreciation">Depreciation : </label>
+				<input class="input depreciation-input" type="number" id="depreciation" name="depreciation" />
+			</div>
+			<br />
+			<input class="button" id="calculate" type="submit" value="Calculate" />
+		</form>
+	</div>
+	<script src="./script.js"></script>
+	</body>
+</html>
